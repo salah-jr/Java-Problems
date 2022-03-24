@@ -1,6 +1,5 @@
 package com.salah;
 
-import java.util.HashSet;
 
 public class Main {
 
@@ -11,11 +10,11 @@ public class Main {
     }
 
 
-    private static void swap(int[] array, int j, int i) {
-        int temp = array[j];
-        array[j] = array[i];
-        array[i] = temp;
-    }
+    // private static void swap(int[] array, int j, int i) {
+    //     int temp = array[j];
+    //     array[j] = array[i];
+    //     array[i] = temp;
+    // }
 
 
 }
