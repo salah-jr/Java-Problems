@@ -7,10 +7,10 @@ public class Main {
     public static void main(String[] args) {
 
         int[] array = new int[]{19, 10, 17, 10, 9, 8, 7, 15, 17, 30, 20, 19, 35, 35};
+        int[] sortedArray = new int[]{1,5,6,7,9,11,14,15,19,20};
 
-        FindArrayDublicates obj = new FindArrayDublicates(array);
-        obj.result();
-
+        BinarySearch obj = new BinarySearch();
+        System.out.println(obj.search(sortedArray, 20));
     }
 
     private static void swap(int[] array, int j, int i) {
