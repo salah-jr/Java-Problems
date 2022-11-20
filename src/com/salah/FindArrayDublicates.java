@@ -5,12 +5,7 @@ import java.util.HashSet;
 
 public class FindArrayDublicates {
 
-    int[] array;
-    public FindArrayDublicates(int[] array){
-        this.array = array;
-    }
-
-    public void result(){
+    public void FindArrayDublicates(int[] array){
         HashSet<Integer> hash = new HashSet<>();
 
         int i = 0;
@@ -27,4 +22,5 @@ public class FindArrayDublicates {
 
         System.out.println("The duplicates numbers are : " + output);
     }
+
 }

@@ -1,18 +1,20 @@
 package com.salah;
 
-import java.util.Arrays;
-import java.util.HashSet;
 
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println(RomanToInteger.romanToInt("IX"));
+        System.out.println(RomanToInteger.romanToInt("IV"));
+        System.out.println(RomanToInteger.romanToInt("XL"));
+        System.out.println(RomanToInteger.romanToInt("XC"));
+        System.out.println(RomanToInteger.romanToInt("CD"));
+        System.out.println(RomanToInteger.romanToInt("CM"));
+        System.out.println(RomanToInteger.romanToInt("LVIII"));
+        System.out.println(RomanToInteger.romanToInt("III"));
+        System.out.println(RomanToInteger.romanToInt("MCMXCIV"));
 
-        int[] array = new int[]{19, 10, 17, 10, 9, 0, 7, 0, 0, 0, 20, 19, 35, 35};
-        int[] sortedArray = new int[]{1,5,6,7,9,11,14,15,19,20};
 
-        MoveZeros obj = new MoveZeros();
-        obj.moveZeroes(array);
-        System.out.println(Arrays.toString(array));
     }
 
     private static void swap(int[] array, int j, int i) {
