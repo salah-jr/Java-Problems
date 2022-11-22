@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//Allowing duplicates in the output array
 public class IntersectionArrays {
     public static int[] intersect(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);

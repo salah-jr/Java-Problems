@@ -6,6 +6,7 @@ public class SingleNumber {
         for (int num : nums) {
             sum = sum ^ num;
         }
+
         return sum;
     }
 }
