@@ -7,7 +7,11 @@ public class Main {
     public static void main(String[] args) {
         int[] nums1 = {4, 9, 5};
         int[] nums2 = {9, 4, 9, 8, 4};
-        String x = "";
+        String s = "()";
+        int p1 = 0, p2 = s.length()-1;
+        char [] array = s.toCharArray();
+
+        System.out.println(array[p1] == array[p2]);
 
     }
 
