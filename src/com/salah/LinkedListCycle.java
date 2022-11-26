@@ -1,14 +1,5 @@
 package com.salah;
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
-
 public class LinkedListCycle {
     public boolean hasCycle(ListNode head) {
 
