@@ -11,16 +11,23 @@ class ListNode {
 
 public class LinkedListCycle {
     public boolean hasCycle(ListNode head) {
-        if (head == null || head.next == null){
+
+        if(head == null){
             return false;
         }
 
-        if(head.next == head){
-            return true;
+        ListNode slow = head;
+        ListNode fast = head.next;
+
+        while(slow != fast){
+            if(fast == null || fast.next == null){
+                return false;
+            }
+
+            slow = slow.next;
+            fast = fast.next.next;
         }
 
-        ListNode nextNode = head.next;
-        head.next = head;
-        return hasCycle(nextNode);
+        return true;
     }
 }
