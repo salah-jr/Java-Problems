@@ -13,5 +13,12 @@ public class LengthOfLastWord {
         }
 
         return count;
+
+
+        /**
+         * Or
+         *   String[] arr = s.trim().split(" ");
+         *   return arr[arr.length-1].length();
+         */
     }
 }
