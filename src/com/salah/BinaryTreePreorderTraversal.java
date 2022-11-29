@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Stack;
 
 public class BinaryTreePreorderTraversal {
-    public List<Integer> preorderTraversal(TreeNode root) {
+    public static List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root);
@@ -13,8 +13,8 @@ public class BinaryTreePreorderTraversal {
             TreeNode node = stack.pop();
             if (node != null) {
                 list.add(node.val);
-                stack.push(node.right);
                 stack.push(node.left);
+                stack.push(node.right);
             }
         }
         return list;
