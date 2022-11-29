@@ -10,6 +10,7 @@ public class Main {
         String s = "()";
         int p1 = 0, p2 = s.length()-1;
         char [] array = s.toCharArray();
+        List<Integer> list = new ArrayList<>();
 
         System.out.println(array[p1] == array[p2]);
 
