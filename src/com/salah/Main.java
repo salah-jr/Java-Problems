@@ -11,7 +11,7 @@ public class Main {
         int p1 = 0, p2 = s.length()-1;
         char [] array = s.toCharArray();
         List<Integer> list = new ArrayList<>();
-
+        Queue<TreeNode> queue = new LinkedList<>();
         System.out.println(array[p1] == array[p2]);
 
     }

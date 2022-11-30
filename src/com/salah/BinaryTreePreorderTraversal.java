@@ -13,8 +13,8 @@ public class BinaryTreePreorderTraversal {
             TreeNode node = stack.pop();
             if (node != null) {
                 list.add(node.val);
-                stack.push(node.left);
                 stack.push(node.right);
+                stack.push(node.left);
             }
         }
         return list;
