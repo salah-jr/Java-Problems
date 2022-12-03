@@ -14,7 +14,4 @@ public class ValidateBinarySearchTree {
         return helper(root.right, root.val, high) && helper(root.left, low, root.val);
 
     }
-
-
-
 }

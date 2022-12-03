@@ -12,7 +12,9 @@ public class Main {
         char [] array = s.toCharArray();
         List<Integer> list = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
-        System.out.println(true && (false || false));
+        System.out.println(false || false);
+        Set<Integer> set = new HashSet<>();
+
     }
 
     private static void swap(int[] array, int j, int i) {
