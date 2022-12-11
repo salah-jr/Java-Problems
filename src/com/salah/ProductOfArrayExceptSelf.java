@@ -4,11 +4,14 @@ public class ProductOfArrayExceptSelf {
     public int[] productExceptSelf(int[] nums) {
         int[] answer = new int[nums.length];
 
-        for (int i = 0, tmp = 1; i < nums.length; i++) {
+        int tmp = 1;
+        for (int i = 0; i < nums.length; i++) {
             answer[i] = tmp;
             tmp *= nums[i];
         }
-        for (int i = nums.length - 1, tmp = 1; i >= 0; i--) {
+
+        tmp = 1;
+        for (int i = nums.length - 1; i >= 0; i--) {
             answer[i] *= tmp;
             tmp *= nums[i];
         }
