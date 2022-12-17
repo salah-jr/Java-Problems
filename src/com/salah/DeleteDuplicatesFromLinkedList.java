@@ -25,7 +25,7 @@ public class DeleteDuplicatesFromLinkedList {
                     fast = fast.next;
                 }
                 if(prev.val != slow.val) prev.next = fast;
-                else{
+                else{  // In this case the val of head is duplicates with fast and need to move the head forward
                     prev = fast;
                     head = prev;
                 }
