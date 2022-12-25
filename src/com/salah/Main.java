@@ -2,12 +2,13 @@ package com.salah;
 
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(f(3));
+
     }
 
     static int f(int num)
