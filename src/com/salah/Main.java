@@ -8,12 +8,5 @@ import java.util.Stack;
 public class Main {
 
     public static void main(String[] args) {
-
-    }
-
-    static int f(int num)
-    {
-        if(num > 0) return num * f(num -1);
-        return 1;
     }
 }
