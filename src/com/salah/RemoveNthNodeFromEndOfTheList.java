@@ -5,7 +5,7 @@ public class RemoveNthNodeFromEndOfTheList {
         int countNodes = 1;
         ListNode cur = head;
         ListNode prev = cur;
-        while(cur != null)
+        while(cur.next != null)
         {
             cur = cur.next;
             countNodes++;
@@ -16,7 +16,7 @@ public class RemoveNthNodeFromEndOfTheList {
             return head.next;
         }
 
-        int nodeNum = countNodes - n;
+        int nodeNum = countNodes - n + 1;
         cur = head;
         prev = cur;
         int i = 1;
