@@ -2,17 +2,17 @@ package com.salah;
 class Node {
     int val;
     int min;
-    Node next;
+    NodePointer next;
     Node() {}
-    Node(int val, int min, Node next) { this.val = val; this.min = min; this.next = next;}
+    Node(int val, int min, NodePointer next) { this.val = val; this.min = min; this.next = next;}
 }
 
 public class DesignStackAndMinStack {
-    private Node head;
+    private NodePointer head;
 
     public void push(int val) {
-        if(head == null) head = new Node(val, val, null);
-        else head = new Node(val, Math.min(val, head.min), head);
+        if(head == null) head = new NodePointer(val, val, null);
+        else head = new NodePointer(val, Math.min(val, head.min), head);
     }
 
     public void pop() {
