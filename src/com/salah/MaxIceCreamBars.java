@@ -7,18 +7,15 @@ public class MaxIceCreamBars {
     public int maxIceCream(int[] costs, int coins) {
         Arrays.sort(costs);
         if(coins < costs[0]) return 0;
-        int ans = 0;
 
-        for(int i = 0; i < costs.length; i++)
+        int ans = 0;
+        int i = 0;
+
+        while(i < costs.length && coins >= costs[i])
         {
-            if(coins > 0)
-            {
-                if(coins >= costs[i])
-                {
-                    ans++;
-                    coins -= costs[i];
-                }
-            } else break;
+            coins -= costs[i];
+            ans++;
+            i++;
         }
 
         return ans;
