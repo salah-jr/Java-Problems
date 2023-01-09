@@ -12,6 +12,7 @@ class NodePointer {
     public NodePointer left;
     public NodePointer right;
     public NodePointer next;
+    public int min;
 
     public NodePointer() {}
 
@@ -24,5 +25,8 @@ class NodePointer {
         left = _left;
         right = _right;
         next = _next;
+    }
+
+    public NodePointer(int val, int val1, Object o) {
     }
 }
